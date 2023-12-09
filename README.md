@@ -34,6 +34,7 @@ To use the Crime Prediction web application:
 3. Run the Flask application by executing `App.py`.
 4. Access the application via a web browser.
 ![image](https://github.com/Akankshg-ByteWizard/UB-CSE-587-State-Crime-Analysis-and-Safety-Prediction/assets/45911434/ad1e13aa-4d93-4e75-8e10-8d0c56d5b159)
+
 ![image](https://github.com/Akankshg-ByteWizard/UB-CSE-587-State-Crime-Analysis-and-Safety-Prediction/assets/45911434/955fe105-56a2-4185-8700-116c938b4f5e)
 ![image](https://github.com/Akankshg-ByteWizard/UB-CSE-587-State-Crime-Analysis-and-Safety-Prediction/assets/45911434/3fe3ced9-8784-4c4b-a1d5-f5d60b7ac0db)
 ![image](https://github.com/Akankshg-ByteWizard/UB-CSE-587-State-Crime-Analysis-and-Safety-Prediction/assets/45911434/e02f7e05-4aa7-4a88-a928-aeeaf9bff520)
