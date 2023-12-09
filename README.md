@@ -65,4 +65,4 @@ Contributions to this project are welcome. To contribute, please follow these st
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as needed.
+This project is licensed under the [MIT License](License). Feel free to use, modify, and distribute it as needed.
