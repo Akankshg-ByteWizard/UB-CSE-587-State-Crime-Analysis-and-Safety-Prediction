@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crime Prediction</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('/static/images/main1.jpg'); /* Update the path to your image */
+            background-size: cover;/* Cover the entire background */
+            background-repeat: no-repeat; /* No repeating of the image */
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/plot">Visualization</a>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">Crime Prediction</h1>
+        <form action="/predict" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="state">State:</label>
+                <select id="state" name="state" class="form-control" required>
+                    <option value="" disabled selected>Select a State</option>
+                    {% for state in states_list %}
+                        <option value="{{ state }}">{{ state.capitalize() }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" min="1960" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="population">Population:</label>
+                <input type="number" id="population" name="population" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="property_crime">Property Crime:</label>
+                <input type="number" id="property_crime" name="property_crime" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="violent_crime">Violent Crime:</label>
+                <input type="number" id="violent_crime" name="violent_crime" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
 
+    <!-- Add Bootstrap JS and jQuery scripts here (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
