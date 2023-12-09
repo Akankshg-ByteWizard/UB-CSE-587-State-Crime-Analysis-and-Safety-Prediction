@@ -33,6 +33,7 @@ To use the Crime Prediction web application:
 2. Install the required Python libraries mentioned in the `requirements.txt` file.
 3. Run the Flask application by executing `App.py`.
 4. Access the application via a web browser.
+![image](https://github.com/Akankshg-ByteWizard/UB-CSE-587-State-Crime-Analysis-and-Safety-Prediction/assets/45911434/ad1e13aa-4d93-4e75-8e10-8d0c56d5b159)
 
 Follow the instructions provided in the application to input data and receive crime rate predictions. Explore the visualizations to gain insights into crime trends.
 
